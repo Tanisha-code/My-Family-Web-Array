@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 78</title> 
+        <link ref="style" type="text/css" href="style.css">
+    </head>
+    <body style="text-align:center">
+        <h1>My family members</h1>
+        <img src="https://i.pinimg.com/originals/61/b2/d3/61b2d33f39927afa72e5f57a28cc7c83.gif" 
+        style="align-self:center;height:400px">
+        <h3 id="family_member"></h3>
+        <button onclick="update();">Next</button>
+        <script>
+            var names= ["Vinay Yaduka","Sweta Poddar","Tanisha Yaduka","Reyansh Yaduka"];
+            var i = 0;
+            function update()
+            {
+                i++;
+                var no_of_family_members_array = 3
+                if(i > no_of_family_members_array)
+                {
+                    i = 0;
+                }
+                var updated_name = names[i];
+                document.getElementById("family_member").innerHTML=updated_name;
+            }
+        </script>
+    </body>
+</html>
